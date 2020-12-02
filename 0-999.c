@@ -21,6 +21,8 @@ void main()
                                "seventeen", "eighteen", "nineteen"};
    int num,len,temp,flag=1;
    scanf("%d",&num);
+   if(num==0)
+   printf("zero");
    len=length(num);
    if(len==3)
    printf("%s hundered ",str[num/100]);
@@ -32,7 +34,7 @@ void main()
     printf("%s ",str2[temp]);
    if(!(num<20 && num>9))
     num=num%10;
-   if (length(num)==1 )
+   if (length(num)==1 && num!=0)
    printf("%s",str[num]);
 
 }

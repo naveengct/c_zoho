@@ -11,9 +11,7 @@ void main()
         else if(a[i]==a[i+1])
         l++;
         else
-        l=1;
-        printf("%d %d %d\n",a[i],a[i+1],l);
-    
+        l=1;    
     } 
   b[t++]=a[i];
         if(l==k){
